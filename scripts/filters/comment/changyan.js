@@ -23,7 +23,7 @@ hexo.extend.filter.register('theme_inject', injects => {
 // Add post_meta
 hexo.extend.filter.register('theme_inject', injects => {
   let theme = hexo.theme.config;
-  if (!theme.changyan.enable || !theme.changyan.appid || !theme.changyan.appkey) return;
+  if (!theme.changyan.enable || !theme.changyan.count || !theme.changyan.appid || !theme.changyan.appkey) return;
 
   injects.postMeta.raw('changyan', `
   {% if post.comments %}

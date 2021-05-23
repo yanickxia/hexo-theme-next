@@ -133,10 +133,11 @@ menu:
   # archives: /archives/ || archive
   专栏: /column/ || edit
   计划: /plan/ || paper-plane
-  推荐: /annual-recommend/2021.html || thumbs-o-up
+  推荐: /annual-recommend/2020.html || thumbs-o-up
   地图: /knowledge-map/ || map
   分享: /link/ || link
   百科: http:////wiki.yanick.site || wikipedia-w
+  叽喳: /noise/index.html || comment
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -592,7 +593,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active: changyan
+  active: livere
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -600,14 +601,11 @@ comments:
   # Modify texts or order for any navs, here are some examples.
   nav:
     livere:
-      text: LiveRe
-      order: 2
+     text: LiveRe
+     order: -1
     disqus:
-      text: Disqus
-      order: 3
-    changyan:
-      text: ChangYan
-      order: 1
+    text: Disqus
+    order: -2
 
 # Disqus
 disqus:
@@ -632,10 +630,10 @@ disqusjs:
 
 # Changyan
 changyan:
-  enable: true
-  appid: cysL8VSAs
-  appkey: 500d337f521f3d63f3031f16746e9470
-  #post_meta_order: -1
+  enable: false
+  appid:
+  appkey:
+  #post_meta_order: 0
 
 # Valine
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
@@ -684,8 +682,8 @@ gitalk:
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
 rating:
-  enable: true
-  id:     29715
+  enable: false
+  id:     # <app_id>
   color:  fc6423
 
 # AddThis Share. See: https://www.addthis.com
@@ -927,7 +925,7 @@ vendors:
   # Internal version: 4.7.0
   # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
   # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
-  fontawesome: https://lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css
+  fontawesome:
 
   # MathJax
   # mathjax: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -992,7 +990,7 @@ vendors:
   # Algolia Search
   # algolia_search: //cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
   # instant_search: //cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js
-  algolia_search: https://lib.baomitu.com/algoliasearch/4.3.0/algoliasearch-lite.umd.js
+  algolia_search:
   instant_search:
 
   # Mermaid
