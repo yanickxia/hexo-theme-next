@@ -126,17 +126,17 @@ darkmode: false
 # When running the site in a subdirectory (e.g. yoursite.com/blog), remove the leading slash from link value (/archives -> archives).
 # External url should start with http:// or https://
 menu:
-  home: / || home
-  about: /about/ || user
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
   #tags: /tags/ || tags
   #categories: /categories/ || th
   # archives: /archives/ || archive
-  专栏: /column/ || edit
-  计划: /plan/ || paper-plane
-  推荐: /annual-recommend/2021.html || thumbs-o-up
-  地图: /knowledge-map/ || map
-  分享: /link/ || link
-  百科: http:////wiki.yanick.site || wikipedia-w
+  专栏: /column/ || fa fa-edit
+  计划: /plan/ || fa fa-paper-plane
+  推荐: /annual-recommend/2021.html || fas fa-thumbs-up
+  地图: /knowledge-map/ || fa fa-map
+  分享: /link/ || fa fa-link
+  百科: http:////wiki.yanick.site || fab fa-wikipedia-w
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -191,7 +191,7 @@ site_state: true
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   #GitHub: https://github.com/yourname || github
-  Mail: mailto:me@yanick.site || envelope
+  Mail: mailto:me@yanick.site || fa fa-envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -200,9 +200,9 @@ social:
   #YouTube: https://youtube.com/yourname || youtube
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
-  GitHub: https://github.com/yanickxia || github
-  ZhiHu: https://www.zhihu.com/people/yann.xia || custom icon-zhihu
-  RSS: /atom.xml || rss
+  GitHub: https://github.com/yanickxia || fab fa-github
+  知乎: https://www.zhihu.com/people/yann.xia || fab fa-zhihu
+  RSS: /atom.xml || fas fa-rss
 
 social_icons:
   enable: true
@@ -211,7 +211,7 @@ social_icons:
 
 # Blog rolls
 links_settings:
-  icon: link
+  icon: fa fa-link
   title: Links
   # Available values: block | inline
   layout: inline
@@ -927,7 +927,7 @@ vendors:
   # Internal version: 4.7.0
   # fontawesome: //cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css
   # fontawesome: //cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
-  fontawesome: https://lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css
+  fontawesome: https://lib.baomitu.com/font-awesome/5.15.3/css/all.min.css
 
   # MathJax
   # mathjax: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
